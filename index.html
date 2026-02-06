@@ -59,7 +59,7 @@
       button.addEventListener("click", function(event) {
         event.preventDefault();
         const usname = input.value;
-        fetch("https://gaymeter3000-1.onrender.com/gaypercent", {
+        fetch("https://gaymeter3000-2.onrender.com/gaypercent", {
           method:"POST",
           headers:{
             "Content-Type": "application/json"
@@ -191,7 +191,7 @@
             document.getElementById("loadingdiv").remove();
           });
         }, 8000);
-        fetch("https://gaymeter3000-1.onrender.com/activateserver")
+        fetch("https://gaymeter3000-2.onrender.com/activateserver")
           .then(response => response.text())
           .then(data => {
             console.log(data);
